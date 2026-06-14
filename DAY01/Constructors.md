@@ -35,5 +35,62 @@ class LinkedList:
   def insert(self, index, value):
   def prepend(self, value):
   
-  
 
+POINTERS
+Concept
+1. Integers are immutable
+
+num1 = 11
+num2 = num1
+print('Before num2 value is updated')
+print('num1 is: ', num1)
+print('num2 is: ', num2)
+print('num1 points to: ', id(num1))
+print('num2 points to: ', id(num2))
+num2 = 22
+print('After num2 value is updated')
+print('num1 is: ', num1)
+print('num2 is: ', num2)
+print('num1 points to: ', id(num1))
+print('num2 points to: ', id(num2))
+
+Output:
+num1 is: 11
+num2 is: 11
+num1 points to: 1234423
+num1 points to: 1234423
+After update
+num1 is: 11
+num2 is: 22
+num1 points to: 1234423
+num1 points to: 1234534
+
+2. Dict elements are mutable
+
+dict1 = {
+          'value': 11
+        }
+dict2 = dict1
+        
+print('Before dict2 value is updated')
+print('dict1 is: ', dict1)
+print('dict2 is: ', dict2)
+print('dict1 points to: ', id(dict1))
+print('dict2 points to: ', id(dict2))
+dict2['value'] = 22
+print('After num2 value is updated')
+print('dict1 is: ', dict1)
+print('dict2 is: ', dict2)
+print('num1 points to: ', id(dict1))
+print('num2 points to: ', id(dict2))
+
+Output:
+dict1 is: {'value', 11}
+dict2 is: {'value', 11}
+dict1 points to: 14062597538816
+dict1 points to: 14062597538816
+After update
+dict1 is: {'value', 22}
+dict1 is: {'value', 22}
+dict1 points to: 14062597538816
+dict1 points to: 14062597538816
