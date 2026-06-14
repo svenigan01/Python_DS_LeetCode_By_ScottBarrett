@@ -96,3 +96,45 @@ dict1 points to: 14062597538816
 dict1 points to: 14062597538816
 ** If dictionary item has all pointers reassigned, garbage collector is run to release these locations
 
+===========
+Constructors
+
+Concept:
+1. Node and LinkedList constructors
+   new_node = None -> new_node.value = 4 new_node.next = None
+   my_linked_list = Node(4) -> None
+
+class Node:
+    def __init__(self, value):
+        self.value = value
+        self.next = None
+        
+class LinkedList:
+    def __init__(self, value):
+        new_node = Node(value)
+        self.head = new_node
+        self.tail = self.head
+        self.length = 1
+
+
+
+my_linked_list = LinkedList(4)
+
+print('Head:', my_linked_list.head.value)
+print('Tail:', my_linked_list.tail.value)
+print('Length:', my_linked_list.length)
+
+
+
+"""
+    EXPECTED OUTPUT:
+    ----------------
+    Head: 4
+    Tail: 4
+    Length: 1
+    
+"""
+
+                      
+
+
