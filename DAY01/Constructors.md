@@ -94,3 +94,5 @@ dict1 is: {'value', 22}
 dict1 is: {'value', 22}
 dict1 points to: 14062597538816
 dict1 points to: 14062597538816
+** If dictionary item has all pointers reassigned, garbage collector is run to release these locations
+
