@@ -27,3 +27,13 @@ Cookie two color is: blue
 Cookie one color is: Yellow
 Cookie two color is: blue
 
+E.g. LinkedList class
+class LinkedList:
+  def __init__(self, value):
+  def append(self, value):
+  def pop(self):
+  def insert(self, index, value):
+  def prepend(self, value):
+  
+  
+
