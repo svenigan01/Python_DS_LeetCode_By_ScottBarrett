@@ -1,6 +1,7 @@
 # DAY03 — Python Utilities: List Methods
 
 > Quick-reference cheat sheet for the most common `list` operations.
+> Runnable demo: [list_methods.py](list_methods.py)
 
 ```python
 nums = [1, 2, 3]
